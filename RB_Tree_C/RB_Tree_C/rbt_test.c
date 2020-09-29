@@ -52,6 +52,6 @@ int main(void)
 		else printf(">> %s\n", (char *)(search(rbt, buffer)->value));
 	}
 
-	destroy(&rbt);
+	destroy(&rbt); // 할당 해제
 	return 0;
 }

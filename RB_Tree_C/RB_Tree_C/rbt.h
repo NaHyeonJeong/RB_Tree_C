@@ -11,7 +11,7 @@ typedef struct Node_ {
 	struct Node_ *right;
 } Node;
 typedef struct {
-	Node *root;
+	Node *root; // 트리는 루트이다
 	int(*compare)(const void *key1, const void *key2);
 } RBT;
 
