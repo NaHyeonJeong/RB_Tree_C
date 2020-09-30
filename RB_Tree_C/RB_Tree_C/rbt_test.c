@@ -33,7 +33,6 @@ int main(void)
 	fp = fopen("CARRIERS.txt", "r");
 	while (fgets(buffer, 100, fp) != NULL) {
 		char *tk;
-		char *context;
 		tk = strtok(buffer, "\t"); // 탭 기준으로 자름
 		strcpy(code[n], tk);
 		tk = strtok(NULL, "\n"); // 개행 기준으로 자름
